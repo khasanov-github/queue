@@ -1,0 +1,33 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add particlesjs —-save
+
+PATH: 
+  C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\azimo\AppData\Local\Microsoft\WindowsApps;;C:\Users\azimo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\azimo\AppData\Roaming\npm;C:\Users\azimo\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
+      at new ClientRequest (_http_client.js:140:13)
+      at Object.request (https.js:309:10)
+      at Request.module.exports.Request.start (C:\Program Files (x86)\Yarn\lib\cli.js:141289:32)
+      at Request.module.exports.Request.end (C:\Program Files (x86)\Yarn\lib\cli.js:142048:10)
+      at end (C:\Program Files (x86)\Yarn\lib\cli.js:141102:14)
+      at Immediate._onImmediate (C:\Program Files (x86)\Yarn\lib\cli.js:141116:7)
+      at processImmediate (internal/timers.js:439:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

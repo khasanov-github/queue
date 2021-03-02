@@ -1,0 +1,529 @@
+$bg-admin-sidebar: #212C32;
+
+// ---- START ADMIN PANEL STYLE ----
+// Start DashboardSideBar
+.katalog-sidebar {
+  background-color: $bg-admin-sidebar;
+  overflow-y: auto;
+  width: 17%;
+  z-index: 1;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #F6F8FC;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+  .menuSidebar {
+    background-color: $bg-admin-sidebar;
+    height: 100%;
+    position: fixed;
+    width: 17%;
+    overflow-y: auto;
+
+    .userStatus {
+      margin-top: 0.9rem;
+      margin-bottom: 0.2rem;
+      font-family: Montserrat;
+
+      h6 {
+        font-size: 18px;
+        font-weight: 100;
+        position: relative;
+
+      }
+
+      h6::before {
+        position: absolute;
+        background-color: #40ff70;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        top: 5px;
+        left: -2px;
+        content: "";
+      }
+    }
+  }
+
+  .list-group-item {
+    padding: 0;
+    background-color: $bg-admin-sidebar;
+    border: 0;
+
+    .nav-link {
+      color: #fff;
+      width: 100%;
+      cursor: pointer;
+      border: none;
+      transition: 0.4s;
+      background-color: $bg-admin-sidebar;
+      border-radius: 0 !important;
+      padding: 10px;
+
+      &:hover {
+        transition: 0.4s;
+        padding-left: 18px;
+        background-color: #131313;
+        border-left: 3px solid #3383e1;
+      }
+
+      .list-group-item-icon {
+        vertical-align: -1px;
+      }
+
+    }
+
+    .active-katalog {
+      transition: 0.4s;
+      padding-left: 18px;
+      background-color: #131313;
+      border-left: 4px solid #3383e1;
+    }
+
+    .inUl {
+      padding-left: 30px;
+
+      &:hover {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+
+// Finish DashboardSideBar
+
+// Start Dashboarlayout components
+.catalog {
+  display: flex;
+  background-color: #ECF0F5;
+
+  .layout-children {
+    width: 80%;
+    padding-top: 20px;
+
+    .title {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .addBtn {
+      background-color: $bg-admin-sidebar;
+      color: #fff;
+      display: inline-block;
+      float: right;
+    }
+
+    .table {
+      tr {
+        th {
+          background-color: $bg-admin-sidebar;
+          color: #fff;
+          border: 0;
+        }
+
+        td {
+          .btn {
+            padding: 7px;
+            line-height: 100%;
+            text-align: center;
+            float: right;
+            margin-right: 5px;
+          }
+
+          .btn-edite {
+            background-color: #378FF6;
+            color: #fff;
+            border-color: #378FF6;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Finish Dashboarlayout components
+
+// Start AdminNavigation components
+.admin-menu {
+  background-color: #3C8DBC;
+  color: white;
+
+  .admin-navbar {
+    background-color: #3C8DBC;
+    height: 50px;
+
+    #PopoverLegacy {
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 0;
+
+    }
+
+
+    #PopoverLegacy:hover {
+      background-color: #357fa9 !important;
+      border: none;
+      height: 50px;
+    }
+
+    #PopoverLegacy:focus {
+      box-shadow: none;
+    }
+
+  }
+
+  // Admin top-right side button click, open profile content
+  .popoverProfile, .popover, .show, .bs-popover-auto {
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    background-color: #357fa9 !important;
+
+    .popover-body {
+      color: white !important;
+    }
+
+    .popover-header {
+      border-radius: 0 !important;
+    }
+
+    .popover-header::before {
+      display: none !important;
+    }
+
+    .arrow {
+      display: none !important;
+    }
+  }
+
+}
+
+// Finish AdminNavigation components
+
+
+// ---- FINISH ADMIN PANEL STYLE ----
+
+// ----  START SIGN IN PAGE ----
+.admin-menu.user-navigation {
+  background-color: transparent;
+}
+
+.sign-in-page {
+  background: url("images/Screen Shot 2020-04-02 at 23.45.13.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh !important;
+
+  .sing-in-block {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+    min-height: 100vh !important;
+    // LOGIN
+    .login-logo-block {
+      #u162_text.text-center {
+        width: 100%;
+        font-weight: 700;
+        font-size: 40px;
+        padding: 2px 2px 2px 2px;
+        box-sizing: border-box;
+
+        p {
+          span.login-logo-left, span.login-logo-right {
+            font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+          }
+
+          span.login-logo-top {
+            font-family: 'MarkerFelt-Wide', 'Marker Felt Wide', 'Marker Felt', sans-serif;
+            letter-spacing: 2.5px;
+            background: linear-gradient(40deg, rgba(76, 157, 215, 0.61), #2E7DB4, #36a1eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+
+    .login-block {
+      margin-bottom: 50px !important;
+      background-color: rgba(245, 245, 245, 0.75);
+      position: relative;
+      animation-name: login-block-scale;
+      animation-duration: .6s;
+
+
+      .register-step-content {
+        animation-name: registration-step-block-scale;
+        animation-duration: .8s;
+      }
+
+      .login-top-block {
+        font-family: 'Arial Bold', 'Arial', sans-serif;
+        letter-spacing: 2px;
+        position: absolute;
+        top: -30px;
+        left: 7%;
+        right: 7%;
+        align-items: center;
+        width: 86%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background: linear-gradient(40deg, rgba(76, 157, 215, 0.61), #2E7DB4, #36a1eb) !important;
+        color: #ffffff;
+        border-radius: .125rem;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+        font-weight: normal !important;
+      }
+
+
+      .field-label {
+        letter-spacing: 2px !important;
+        font-weight: normal;
+      }
+
+      #phoneNumber, #password {
+        height: 38px;
+        font-size: 14px !important;
+      }
+
+      Button.btn-block {
+        background: linear-gradient(40deg, #3192cc, rgb(54, 161, 235)) !important;
+        font-weight: normal;
+        font-family: sans-serif, 'Arial';
+        letter-spacing: 3.5px;
+        font-size: 18px;
+      }
+
+      .btn.bg-white.btn-sm.btn-outline-primary {
+        letter-spacing: 0.5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .btn.bg-white.btn-sm.btn-outline-primary:hover,
+      .btn.bg-white.btn-sm.btn-outline-primary:active,
+      .btn.bg-white.btn-sm.btn-outline-primary:focus,
+      .btn.bg-white.btn-sm.btn-outline-primary:visited {
+        background: linear-gradient(40deg, #3192cc, rgb(54, 161, 235)) !important;
+        transition-duration: .2s;
+
+        //transition-delay: 0.2s;
+      }
+    }
+
+    //  REGISTER
+    .col-md-5.register-step-block {
+      padding: 0 !important;
+      // START STEPS BLOCK
+      .step-block {
+        display: inline-block !important;
+        width: 31% !important;
+      }
+
+      .step-block.step-second-block {
+        width: 7% !important;
+      }
+
+      .step {
+        text-align: center;
+        margin: 0 !important;
+        width: 25% !important;
+        font-size: 14px;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        border-radius: 16px;
+        padding: 5px !important;
+        line-height: 1.1;
+        font-weight: bolder;
+        position: relative;
+      }
+
+      .step-block.step-second-block .step {
+        width: 100% !important;
+      }
+
+      .step:before {
+        top: 140%;
+        font-size: 12px;
+        text-align: center;
+        left: -50% !important;
+        width: 60px;
+        display: block;
+        position: absolute;
+        letter-spacing: 1px;
+        font-weight: lighter;
+
+      }
+
+      .step1.step:before {
+        content: "Foydalanuvchi";
+      }
+
+      .step2.step:before {
+        content: "Kompaniya";
+      }
+
+      .step3.step:before {
+        content: "Bog'lanish";
+      }
+
+      .step4.step:before {
+        content: "Tasdiqlash";
+      }
+
+      .step.active {
+        border-color: #3A9CE4;
+        background: linear-gradient(40deg, #3192cc, rgb(54, 161, 235)) !important;
+        color: white;
+
+      }
+
+      .step.finish {
+        border-color: #3A9CE4;
+        font-size: 14px;
+        color: #3A9CE4;
+      }
+
+      .step-check {
+        color: #3A9CE4;
+        padding-bottom: 2px;
+      }
+
+      .step-border {
+        border: 1px solid #cccccc;
+        margin-bottom: 2px !important;
+        width: 75% !important;
+      }
+
+      .step-border.active {
+        border: 1px solid;
+        border-image-source: linear-gradient(40deg, #3192cc, rgb(54, 161, 235)) !important;
+        border-image-slice: 1;
+      }
+
+      .step, .step-border {
+        display: inline-block;
+      }
+
+      // FINISH STEPS BLOCK
+    }
+
+    .input-plus-button:focus, .input-minus-button:focus {
+      box-shadow: none !important;
+    }
+
+    .form-control-md {
+      height: 38px !important;
+      font-size: 14px !important;
+    }
+
+    .step-buttons {
+      Button {
+        font-weight: normal !important;
+        letter-spacing: 2.5px !important;
+        border: 0;
+      }
+
+      .step-button-left {
+        background-color: #ff9500;
+        //background: linear-gradient(0deg, rgb(255, 49, 119), #ff5653) !important;
+        letter-spacing: 2px !important;
+      }
+
+      .step-button-right {
+        background: linear-gradient(40deg, #3192cc, rgb(54, 161, 235)) !important;
+
+        //background: linear-gradient(0deg, rgb(255, 49, 119), #ff5653) !important;
+        letter-spacing: 2.5px !important;
+      }
+    }
+
+    .countDownBlock {
+      font-size: 40px;
+      color: #247bcc;
+      background-color: #e5e4e4;
+      font-weight: bolder;
+      margin-top: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    #verify-input-form {
+      .verifyCode {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        background-color: white;
+        border-bottom: 2px solid #2E7DB4;
+        font-size: 40px !important;
+        letter-spacing: 8px;
+      }
+      .verifyCode:focus{
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.location {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .mapYandex {
+    height: 280px;
+  }
+
+  iframe {
+    min-width: 100%;
+    height: 520px;
+  }
+}
+
+// ---- FINISH SIGN IN PAGE ----
+
+
+// ---- START ANIMATION ----
+@keyframes login-block-scale {
+  0% {
+    transform: scale(1.05, 1.05);
+  }
+  30% {
+    transform: scale(1, 1);
+  }
+  60% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1)
+  }
+}
+
+@keyframes registration-step-block-scale {
+  0% {
+    //transform: rotateX(-45deg);
+    transform: scale(0.0001, 0.0001);
+    //transform: rotateY(-45deg);
+  }
+  80% {
+    transform: scale(1.02, 1.02);
+  }
+}
+
+// ---- FINISH ANIMATION ----
+
+
+
+
+
+
